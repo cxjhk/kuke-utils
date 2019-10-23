@@ -15,7 +15,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Kuke\\Controller\\": "src/Flower/Controller"
+        "Kuke\\Controller\\": "src/Controller"
       }
     }
   }
