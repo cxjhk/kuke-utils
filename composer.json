@@ -18,5 +18,10 @@
             "Kuke\\Http\\": "src/Http/",
             "Kuke\\WeChat\\": "src/WeChat/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
     }
 }
