@@ -6,6 +6,7 @@ namespace Kuke\WeChat;
  * Class Factory.
  *
  * @method static \Kuke\WeChat\MiniProgram\Application        miniProgram(array $config)
+ * @method static \Kuke\WeChat\Payment\Application            payment(array  $config)
  */
 class Factory
 {
