@@ -1,21 +1,22 @@
 {
     "name": "kuke/utils",
     "description": "try make a package",
-    "type": "kuke",
+    "type": "library",
     "license": "MIT",
     "authors": [
-      {
-        "name": "kukehuyu",
-        "email": "1194794288@qq.com"
-      }
+        {
+            "name": "kuke",
+            "email": "kukehuyu@sina.com"
+        }
     ],
     "minimum-stability": "dev",
     "require": {
-      "php": ">=7.0"
+        "php": ">=7.1"
     },
     "autoload": {
-      "psr-4": {
-        "Kuke\\Controller\\": "src/Controller"
-      }
+        "psr-4": {
+            "Kuke\\Http\\": "src/Http/",
+            "Kuke\\WeChat\\": "src/WeChat/"
+        }
     }
-  }
+}
