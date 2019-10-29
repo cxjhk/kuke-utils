@@ -16,7 +16,8 @@
     "autoload": {
         "psr-4": {
             "Kuke\\Http\\": "src/Http/",
-            "Kuke\\WeChat\\": "src/WeChat/"
+            "Kuke\\WeChat\\": "src/WeChat/",
+            "Kuke\\Utils\\": "src/Utils/"
         },
         "files": []
     },
