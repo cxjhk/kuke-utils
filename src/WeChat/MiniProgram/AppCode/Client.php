@@ -2,8 +2,6 @@
 
 namespace Kuke\WeChat\MiniProgram\AppCode;
 
-
-use Kuke\Utils\ArrayHelper;
 use Kuke\WeChat\MiniProgram\ServiceFactory;
 
 class Client extends ServiceFactory

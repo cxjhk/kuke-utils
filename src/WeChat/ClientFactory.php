@@ -7,10 +7,8 @@
  */
 
 namespace Kuke\WeChat;
-
-
-use Hyperf\Utils\ApplicationContext;
 use Kuke\Utils\ArrayHelper;
+use Kuke\Utils\Functions;
 
 class  ClientFactory
 {
@@ -18,8 +16,10 @@ class  ClientFactory
 
     public function handle($config = [])
     {
-        return ApplicationContext::getContainer()->get(\Hyperf\Guzzle\ClientFactory::class)->create(ArrayHelper::merge([
-            'base_uri'  =>  $this->url
-        ],$config));
+        return Functions::di()
+            ->get(\Hyperf\Guzzle\ClientFactory::class)
+            ->create(ArrayHelper::merge([
+                'base_uri'  =>  $this->url
+            ],$config));
     }
 }

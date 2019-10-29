@@ -4,8 +4,6 @@ namespace Kuke\WeChat\Payment;
 
 
 use Hyperf\Utils\Context;
-use Kuke\WeChat\MiniProgram\AppCode\Client;
-use Kuke\WeChat\MiniProgram\Auth\AccessToken;
 
 /**
  * Class Factory.

@@ -2,6 +2,7 @@
 
 namespace Kuke\WeChat\Payment;
 use Hyperf\Utils\Context;
+use Kuke\Utils\Functions;
 use Kuke\WeChat\ClientFactory;
 use Kuke\WeChat\MiniProgram\Auth\AccessToken;
 use Psr\SimpleCache\CacheInterface;
@@ -33,7 +34,7 @@ class ServiceFactory
         'base_uri'  =>  'https://api.mch.weixin.qq.com'
     ])
     {
-        return di(ClientFactory::class)->handle($config);
+        return Functions::di(ClientFactory::class)->handle($config);
     }
 
     /**
@@ -65,7 +66,7 @@ class ServiceFactory
      */
     public function cache($key,$value = '',$tll = null)
     {
-        $cache = di(CacheInterface::class);
+        $cache = Functions::di(CacheInterface::class);
         if (is_null($value)){
             return $cache->delete($key);
         }elseif(empty($value)){
@@ -79,7 +80,7 @@ class ServiceFactory
     {
         // TODO: Implement __get() method.
         if ($name == 'token'){
-            return di(AccessToken::class)->getToken();
+            return Functions::di(AccessToken::class)->getToken();
         }
     }
 }
