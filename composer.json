@@ -17,7 +17,8 @@
         "psr-4": {
             "Kuke\\Http\\": "src/Http/",
             "Kuke\\WeChat\\": "src/WeChat/"
-        }
+        },
+        "files": []
     },
     "extra": {
         "branch-alias": {
