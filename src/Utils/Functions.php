@@ -55,7 +55,7 @@ class Functions
         return self::di()->get(Producer::class)->produce($message, true);
     }
 
-    function jwt():\Hyperf\JwtAuth\Jwt
+    public static function jwt():\Hyperf\JwtAuth\Jwt
     {
         return self::di()->get(\Hyperf\JwtAuth\Jwt::class);
     }
