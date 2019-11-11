@@ -58,6 +58,8 @@ class Client extends ServiceFactory
             ];
             //二次验签
             $return['paySign'] = $this->twoSign($return);
+            $return['return_code'] = 'SUCCESS';
+            $return['return_msg'] = 'OK';
 
             return $return;
         }
